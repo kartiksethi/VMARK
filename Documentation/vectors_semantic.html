@@ -1,0 +1,255 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module vectors_semantic</title>
+<meta charset="utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>vectors_semantic</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/anikethjr/VMARK/vectors_semantic.py">/home/anikethjr/VMARK/vectors_semantic.py</a></font></td></tr></table>
+    <p><tt>"&nbsp;Library&nbsp;Imports</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="linecache.html">linecache</a><br>
+<a href="math.html">math</a><br>
+</td><td width="25%" valign=top><a href="nltk.html">nltk</a><br>
+<a href="numpy.html">numpy</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+<a href="timeit.html">timeit</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-ENPY"><strong>ENPY</strong></a>()</dt><dd><tt>Used&nbsp;to&nbsp;calculate&nbsp;the&nbsp;global&nbsp;weights&nbsp;for&nbsp;the&nbsp;query&nbsp;vector&nbsp;using&nbsp;the&nbsp;ENPY&nbsp;formula&nbsp;(see&nbsp;documentation).<br>
+&nbsp;<br>
+Returns:<br>
+-&nbsp;ENPY_list:&nbsp;Returns&nbsp;the&nbsp;list&nbsp;of&nbsp;global&nbsp;weights&nbsp;w.r.t&nbsp;query&nbsp;terms.</tt></dd></dl>
+ <dl><dt><a name="-IGFL"><strong>IGFL</strong></a>(term)</dt><dd><tt>Used&nbsp;to&nbsp;calculate&nbsp;the&nbsp;global&nbsp;weights&nbsp;for&nbsp;the&nbsp;document&nbsp;vector&nbsp;using&nbsp;the&nbsp;IGFL&nbsp;formula&nbsp;(see&nbsp;documentation).<br>
+&nbsp;<br>
+Input:<br>
+-term:&nbsp;term&nbsp;for&nbsp;which&nbsp;we&nbsp;want&nbsp;to&nbsp;retrieve&nbsp;the&nbsp;IGFL&nbsp;value.<br>
+&nbsp;<br>
+Returns:<br>
+-wt:&nbsp;IGFL&nbsp;value&nbsp;w.r.t&nbsp;to&nbsp;the&nbsp;input&nbsp;term.</tt></dd></dl>
+ <dl><dt><a name="-LOGG"><strong>LOGG</strong></a>()</dt><dd><tt>Used&nbsp;to&nbsp;calculate&nbsp;the&nbsp;local&nbsp;weights&nbsp;for&nbsp;the&nbsp;query&nbsp;vector&nbsp;using&nbsp;the&nbsp;LOGG&nbsp;formula&nbsp;(see&nbsp;documentation).<br>
+&nbsp;<br>
+Returns:<br>
+-&nbsp;LOGG_list:&nbsp;Returns&nbsp;the&nbsp;list&nbsp;of&nbsp;local&nbsp;weights&nbsp;w.r.t&nbsp;query&nbsp;terms.</tt></dd></dl>
+ <dl><dt><a name="-SQRT"><strong>SQRT</strong></a>(doc)</dt><dd><tt>Used&nbsp;to&nbsp;calculate&nbsp;the&nbsp;local&nbsp;weights&nbsp;for&nbsp;document&nbsp;vectors&nbsp;using&nbsp;the&nbsp;SQRT&nbsp;formula&nbsp;(see&nbsp;documentation).<br>
+Also&nbsp;calculate&nbsp;the&nbsp;similarity&nbsp;value&nbsp;of&nbsp;the&nbsp;document&nbsp;vector&nbsp;w.r.t&nbsp;the&nbsp;entered&nbsp;query.<br>
+&nbsp;<br>
+Input:<br>
+-doc:&nbsp;document&nbsp;for&nbsp;which&nbsp;we&nbsp;want&nbsp;to&nbsp;calculate&nbsp;the&nbsp;SQRT&nbsp;value&nbsp;and&nbsp;corresponding&nbsp;similarity&nbsp;with&nbsp;entered&nbsp;query.<br>
+&nbsp;<br>
+Returns:<br>
+-sim:&nbsp;similarity&nbsp;value&nbsp;of&nbsp;the&nbsp;document&nbsp;w.r.t&nbsp;entered&nbsp;query</tt></dd></dl>
+ <dl><dt><a name="-acos"><strong>acos</strong></a>(...)</dt><dd><tt><a href="#-acos">acos</a>(x)<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;arc&nbsp;cosine&nbsp;(measured&nbsp;in&nbsp;radians)&nbsp;of&nbsp;x.</tt></dd></dl>
+ <dl><dt><a name="-acosh"><strong>acosh</strong></a>(...)</dt><dd><tt><a href="#-acosh">acosh</a>(x)<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;inverse&nbsp;hyperbolic&nbsp;cosine&nbsp;of&nbsp;x.</tt></dd></dl>
+ <dl><dt><a name="-asin"><strong>asin</strong></a>(...)</dt><dd><tt><a href="#-asin">asin</a>(x)<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;arc&nbsp;sine&nbsp;(measured&nbsp;in&nbsp;radians)&nbsp;of&nbsp;x.</tt></dd></dl>
+ <dl><dt><a name="-asinh"><strong>asinh</strong></a>(...)</dt><dd><tt><a href="#-asinh">asinh</a>(x)<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;inverse&nbsp;hyperbolic&nbsp;sine&nbsp;of&nbsp;x.</tt></dd></dl>
+ <dl><dt><a name="-atan"><strong>atan</strong></a>(...)</dt><dd><tt><a href="#-atan">atan</a>(x)<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;arc&nbsp;tangent&nbsp;(measured&nbsp;in&nbsp;radians)&nbsp;of&nbsp;x.</tt></dd></dl>
+ <dl><dt><a name="-atan2"><strong>atan2</strong></a>(...)</dt><dd><tt><a href="#-atan2">atan2</a>(y,&nbsp;x)<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;arc&nbsp;tangent&nbsp;(measured&nbsp;in&nbsp;radians)&nbsp;of&nbsp;y/x.<br>
+Unlike&nbsp;<a href="#-atan">atan</a>(y/x),&nbsp;the&nbsp;signs&nbsp;of&nbsp;both&nbsp;x&nbsp;and&nbsp;y&nbsp;are&nbsp;considered.</tt></dd></dl>
+ <dl><dt><a name="-atanh"><strong>atanh</strong></a>(...)</dt><dd><tt><a href="#-atanh">atanh</a>(x)<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;inverse&nbsp;hyperbolic&nbsp;tangent&nbsp;of&nbsp;x.</tt></dd></dl>
+ <dl><dt><a name="-ceil"><strong>ceil</strong></a>(...)</dt><dd><tt><a href="#-ceil">ceil</a>(x)<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;ceiling&nbsp;of&nbsp;x&nbsp;as&nbsp;a&nbsp;float.<br>
+This&nbsp;is&nbsp;the&nbsp;smallest&nbsp;integral&nbsp;value&nbsp;&gt;=&nbsp;x.</tt></dd></dl>
+ <dl><dt><a name="-copysign"><strong>copysign</strong></a>(...)</dt><dd><tt><a href="#-copysign">copysign</a>(x,&nbsp;y)<br>
+&nbsp;<br>
+Return&nbsp;x&nbsp;with&nbsp;the&nbsp;sign&nbsp;of&nbsp;y.</tt></dd></dl>
+ <dl><dt><a name="-cos"><strong>cos</strong></a>(...)</dt><dd><tt><a href="#-cos">cos</a>(x)<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;cosine&nbsp;of&nbsp;x&nbsp;(measured&nbsp;in&nbsp;radians).</tt></dd></dl>
+ <dl><dt><a name="-cosh"><strong>cosh</strong></a>(...)</dt><dd><tt><a href="#-cosh">cosh</a>(x)<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;hyperbolic&nbsp;cosine&nbsp;of&nbsp;x.</tt></dd></dl>
+ <dl><dt><a name="-degrees"><strong>degrees</strong></a>(...)</dt><dd><tt><a href="#-degrees">degrees</a>(x)<br>
+&nbsp;<br>
+Convert&nbsp;angle&nbsp;x&nbsp;from&nbsp;radians&nbsp;to&nbsp;degrees.</tt></dd></dl>
+ <dl><dt><a name="-documentsVector"><strong>documentsVector</strong></a>()</dt><dd><tt>Used&nbsp;to&nbsp;compute&nbsp;the&nbsp;document&nbsp;vector&nbsp;and&nbsp;calculate&nbsp;its&nbsp;similarity&nbsp;w.r.t&nbsp;query.</tt></dd></dl>
+ <dl><dt><a name="-erf"><strong>erf</strong></a>(...)</dt><dd><tt><a href="#-erf">erf</a>(x)<br>
+&nbsp;<br>
+Error&nbsp;function&nbsp;at&nbsp;x.</tt></dd></dl>
+ <dl><dt><a name="-erfc"><strong>erfc</strong></a>(...)</dt><dd><tt><a href="#-erfc">erfc</a>(x)<br>
+&nbsp;<br>
+Complementary&nbsp;error&nbsp;function&nbsp;at&nbsp;x.</tt></dd></dl>
+ <dl><dt><a name="-exp"><strong>exp</strong></a>(...)</dt><dd><tt><a href="#-exp">exp</a>(x)<br>
+&nbsp;<br>
+Return&nbsp;e&nbsp;raised&nbsp;to&nbsp;the&nbsp;power&nbsp;of&nbsp;x.</tt></dd></dl>
+ <dl><dt><a name="-expm1"><strong>expm1</strong></a>(...)</dt><dd><tt><a href="#-expm1">expm1</a>(x)<br>
+&nbsp;<br>
+Return&nbsp;<a href="#-exp">exp</a>(x)-1.<br>
+This&nbsp;function&nbsp;avoids&nbsp;the&nbsp;loss&nbsp;of&nbsp;precision&nbsp;involved&nbsp;in&nbsp;the&nbsp;direct&nbsp;evaluation&nbsp;of&nbsp;<a href="#-exp">exp</a>(x)-1&nbsp;for&nbsp;small&nbsp;x.</tt></dd></dl>
+ <dl><dt><a name="-fabs"><strong>fabs</strong></a>(...)</dt><dd><tt><a href="#-fabs">fabs</a>(x)<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;absolute&nbsp;value&nbsp;of&nbsp;the&nbsp;float&nbsp;x.</tt></dd></dl>
+ <dl><dt><a name="-factorial"><strong>factorial</strong></a>(...)</dt><dd><tt><a href="#-factorial">factorial</a>(x)&nbsp;-&gt;&nbsp;Integral<br>
+&nbsp;<br>
+Find&nbsp;x!.&nbsp;Raise&nbsp;a&nbsp;ValueError&nbsp;if&nbsp;x&nbsp;is&nbsp;negative&nbsp;or&nbsp;non-integral.</tt></dd></dl>
+ <dl><dt><a name="-floor"><strong>floor</strong></a>(...)</dt><dd><tt><a href="#-floor">floor</a>(x)<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;floor&nbsp;of&nbsp;x&nbsp;as&nbsp;a&nbsp;float.<br>
+This&nbsp;is&nbsp;the&nbsp;largest&nbsp;integral&nbsp;value&nbsp;&lt;=&nbsp;x.</tt></dd></dl>
+ <dl><dt><a name="-fmod"><strong>fmod</strong></a>(...)</dt><dd><tt><a href="#-fmod">fmod</a>(x,&nbsp;y)<br>
+&nbsp;<br>
+Return&nbsp;<a href="#-fmod">fmod</a>(x,&nbsp;y),&nbsp;according&nbsp;to&nbsp;platform&nbsp;C.&nbsp;&nbsp;x&nbsp;%&nbsp;y&nbsp;may&nbsp;differ.</tt></dd></dl>
+ <dl><dt><a name="-frexp"><strong>frexp</strong></a>(...)</dt><dd><tt><a href="#-frexp">frexp</a>(x)<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;mantissa&nbsp;and&nbsp;exponent&nbsp;of&nbsp;x,&nbsp;as&nbsp;pair&nbsp;(m,&nbsp;e).<br>
+m&nbsp;is&nbsp;a&nbsp;float&nbsp;and&nbsp;e&nbsp;is&nbsp;an&nbsp;int,&nbsp;such&nbsp;that&nbsp;x&nbsp;=&nbsp;m&nbsp;*&nbsp;2.**e.<br>
+If&nbsp;x&nbsp;is&nbsp;0,&nbsp;m&nbsp;and&nbsp;e&nbsp;are&nbsp;both&nbsp;0.&nbsp;&nbsp;Else&nbsp;0.5&nbsp;&lt;=&nbsp;abs(m)&nbsp;&lt;&nbsp;1.0.</tt></dd></dl>
+ <dl><dt><a name="-fsum"><strong>fsum</strong></a>(...)</dt><dd><tt><a href="#-fsum">fsum</a>(iterable)<br>
+&nbsp;<br>
+Return&nbsp;an&nbsp;accurate&nbsp;floating&nbsp;point&nbsp;sum&nbsp;of&nbsp;values&nbsp;in&nbsp;the&nbsp;iterable.<br>
+Assumes&nbsp;IEEE-754&nbsp;floating&nbsp;point&nbsp;arithmetic.</tt></dd></dl>
+ <dl><dt><a name="-gamma"><strong>gamma</strong></a>(...)</dt><dd><tt><a href="#-gamma">gamma</a>(x)<br>
+&nbsp;<br>
+Gamma&nbsp;function&nbsp;at&nbsp;x.</tt></dd></dl>
+ <dl><dt><a name="-getDocs"><strong>getDocs</strong></a>(term, linenum)</dt><dd><tt>Finds&nbsp;the&nbsp;postings&nbsp;list&nbsp;of&nbsp;the&nbsp;term.&nbsp;Also&nbsp;finds&nbsp;the&nbsp;union&nbsp;of&nbsp;relevant&nbsp;documents&nbsp;w.r.t&nbsp;query.<br>
+&nbsp;<br>
+Input:<br>
+-term:&nbsp;the&nbsp;term&nbsp;for&nbsp;which&nbsp;we&nbsp;are&nbsp;finding&nbsp;the&nbsp;postings&nbsp;list.<br>
+-linenum:&nbsp;linenumber&nbsp;from&nbsp;which&nbsp;the&nbsp;posting&nbsp;list&nbsp;is&nbsp;to&nbsp;be&nbsp;retrieved.</tt></dd></dl>
+ <dl><dt><a name="-getNorm"><strong>getNorm</strong></a>(doc)</dt><dd><tt>Get&nbsp;the&nbsp;normalised&nbsp;values<br>
+Used&nbsp;to&nbsp;calulate&nbsp;the&nbsp;normalization&nbsp;value&nbsp;for&nbsp;document.<br>
+&nbsp;<br>
+Input:<br>
+-doc:&nbsp;document&nbsp;for&nbsp;which&nbsp;we&nbsp;want&nbsp;to&nbsp;retrieve&nbsp;the&nbsp;normalization&nbsp;value&nbsp;(root&nbsp;of&nbsp;(sum&nbsp;of&nbsp;squares))<br>
+&nbsp;<br>
+Returns:<br>
+-norm:&nbsp;normalization&nbsp;value&nbsp;for&nbsp;the&nbsp;document.</tt></dd></dl>
+ <dl><dt><a name="-hypot"><strong>hypot</strong></a>(...)</dt><dd><tt><a href="#-hypot">hypot</a>(x,&nbsp;y)<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;Euclidean&nbsp;distance,&nbsp;<a href="#-sqrt">sqrt</a>(x*x&nbsp;+&nbsp;y*y).</tt></dd></dl>
+ <dl><dt><a name="-isinf"><strong>isinf</strong></a>(...)</dt><dd><tt><a href="#-isinf">isinf</a>(x)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Check&nbsp;if&nbsp;float&nbsp;x&nbsp;is&nbsp;infinite&nbsp;(positive&nbsp;or&nbsp;negative).</tt></dd></dl>
+ <dl><dt><a name="-isnan"><strong>isnan</strong></a>(...)</dt><dd><tt><a href="#-isnan">isnan</a>(x)&nbsp;-&gt;&nbsp;bool<br>
+&nbsp;<br>
+Check&nbsp;if&nbsp;float&nbsp;x&nbsp;is&nbsp;not&nbsp;a&nbsp;number&nbsp;(NaN).</tt></dd></dl>
+ <dl><dt><a name="-ldexp"><strong>ldexp</strong></a>(...)</dt><dd><tt><a href="#-ldexp">ldexp</a>(x,&nbsp;i)<br>
+&nbsp;<br>
+Return&nbsp;x&nbsp;*&nbsp;(2**i).</tt></dd></dl>
+ <dl><dt><a name="-lgamma"><strong>lgamma</strong></a>(...)</dt><dd><tt><a href="#-lgamma">lgamma</a>(x)<br>
+&nbsp;<br>
+Natural&nbsp;logarithm&nbsp;of&nbsp;absolute&nbsp;value&nbsp;of&nbsp;Gamma&nbsp;function&nbsp;at&nbsp;x.</tt></dd></dl>
+ <dl><dt><a name="-log"><strong>log</strong></a>(...)</dt><dd><tt><a href="#-log">log</a>(x[,&nbsp;base])<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;logarithm&nbsp;of&nbsp;x&nbsp;to&nbsp;the&nbsp;given&nbsp;base.<br>
+If&nbsp;the&nbsp;base&nbsp;not&nbsp;specified,&nbsp;returns&nbsp;the&nbsp;natural&nbsp;logarithm&nbsp;(base&nbsp;e)&nbsp;of&nbsp;x.</tt></dd></dl>
+ <dl><dt><a name="-log10"><strong>log10</strong></a>(...)</dt><dd><tt><a href="#-log10">log10</a>(x)<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;base&nbsp;10&nbsp;logarithm&nbsp;of&nbsp;x.</tt></dd></dl>
+ <dl><dt><a name="-log1p"><strong>log1p</strong></a>(...)</dt><dd><tt><a href="#-log1p">log1p</a>(x)<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;natural&nbsp;logarithm&nbsp;of&nbsp;1+x&nbsp;(base&nbsp;e).<br>
+The&nbsp;result&nbsp;is&nbsp;computed&nbsp;in&nbsp;a&nbsp;way&nbsp;which&nbsp;is&nbsp;accurate&nbsp;for&nbsp;x&nbsp;near&nbsp;zero.</tt></dd></dl>
+ <dl><dt><a name="-modf"><strong>modf</strong></a>(...)</dt><dd><tt><a href="#-modf">modf</a>(x)<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;fractional&nbsp;and&nbsp;integer&nbsp;parts&nbsp;of&nbsp;x.&nbsp;&nbsp;Both&nbsp;results&nbsp;carry&nbsp;the&nbsp;sign<br>
+of&nbsp;x&nbsp;and&nbsp;are&nbsp;floats.</tt></dd></dl>
+ <dl><dt><a name="-pow"><strong>pow</strong></a>(...)</dt><dd><tt><a href="#-pow">pow</a>(x,&nbsp;y)<br>
+&nbsp;<br>
+Return&nbsp;x**y&nbsp;(x&nbsp;to&nbsp;the&nbsp;power&nbsp;of&nbsp;y).</tt></dd></dl>
+ <dl><dt><a name="-queryVector"><strong>queryVector</strong></a>()</dt><dd><tt>Used&nbsp;to&nbsp;calculate&nbsp;the&nbsp;query&nbsp;vector&nbsp;of&nbsp;the&nbsp;entered&nbsp;query.</tt></dd></dl>
+ <dl><dt><a name="-radians"><strong>radians</strong></a>(...)</dt><dd><tt><a href="#-radians">radians</a>(x)<br>
+&nbsp;<br>
+Convert&nbsp;angle&nbsp;x&nbsp;from&nbsp;degrees&nbsp;to&nbsp;radians.</tt></dd></dl>
+ <dl><dt><a name="-retrieveRelevant"><strong>retrieveRelevant</strong></a>(line_list)</dt><dd><tt>Prints&nbsp;the&nbsp;relevant&nbsp;documents.<br>
+&nbsp;<br>
+Input:<br>
+-line_list:&nbsp;represents&nbsp;a&nbsp;list&nbsp;of&nbsp;starting&nbsp;line&nbsp;numbers&nbsp;for&nbsp;the&nbsp;top&nbsp;'n'&nbsp;relevant&nbsp;documents.</tt></dd></dl>
+ <dl><dt><a name="-sin"><strong>sin</strong></a>(...)</dt><dd><tt><a href="#-sin">sin</a>(x)<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;sine&nbsp;of&nbsp;x&nbsp;(measured&nbsp;in&nbsp;radians).</tt></dd></dl>
+ <dl><dt><a name="-sinh"><strong>sinh</strong></a>(...)</dt><dd><tt><a href="#-sinh">sinh</a>(x)<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;hyperbolic&nbsp;sine&nbsp;of&nbsp;x.</tt></dd></dl>
+ <dl><dt><a name="-sqrt"><strong>sqrt</strong></a>(...)</dt><dd><tt><a href="#-sqrt">sqrt</a>(x)<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;square&nbsp;root&nbsp;of&nbsp;x.</tt></dd></dl>
+ <dl><dt><a name="-tan"><strong>tan</strong></a>(...)</dt><dd><tt><a href="#-tan">tan</a>(x)<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;tangent&nbsp;of&nbsp;x&nbsp;(measured&nbsp;in&nbsp;radians).</tt></dd></dl>
+ <dl><dt><a name="-tanh"><strong>tanh</strong></a>(...)</dt><dd><tt><a href="#-tanh">tanh</a>(x)<br>
+&nbsp;<br>
+Return&nbsp;the&nbsp;hyperbolic&nbsp;tangent&nbsp;of&nbsp;x.</tt></dd></dl>
+ <dl><dt><a name="-trunc"><strong>trunc</strong></a>(...)</dt><dd><tt><a href="#-trunc">trunc</a>(x:Real)&nbsp;-&gt;&nbsp;Integral<br>
+&nbsp;<br>
+Truncates&nbsp;x&nbsp;to&nbsp;the&nbsp;nearest&nbsp;Integral&nbsp;toward&nbsp;0.&nbsp;Uses&nbsp;the&nbsp;__trunc__&nbsp;magic&nbsp;method.</tt></dd></dl>
+ <dl><dt><a name="-wordnetpos"><strong>wordnetpos</strong></a>(tbtag)</dt><dd><tt>Function&nbsp;which&nbsp;gets&nbsp;the&nbsp;corresponding&nbsp;Wordnet&nbsp;POS&nbsp;tag&nbsp;for&nbsp;a&nbsp;treebank&nbsp;POS&nbsp;tag<br>
+&nbsp;<br>
+Input:<br>
+-tbtag:&nbsp;the&nbsp;treebank&nbsp;POS&nbsp;tag&nbsp;which&nbsp;needs&nbsp;to&nbsp;be&nbsp;converted&nbsp;to&nbsp;a&nbsp;Wordnet&nbsp;POS&nbsp;tag<br>
+&nbsp;<br>
+Return:<br>
+&nbsp;Returns&nbsp;one&nbsp;of&nbsp;the&nbsp;following&nbsp;wordnet&nbsp;POS&nbsp;tags&nbsp;based&nbsp;on&nbsp;the&nbsp;treebank&nbsp;POS&nbsp;tag&nbsp;supplied<br>
+-wn.ADJ:&nbsp;for&nbsp;adjective<br>
+-wn.NOUN:&nbsp;for&nbsp;noun<br>
+-wn.VERB:&nbsp;for&nbsp;verb<br>
+-wn.ADV:&nbsp;for&nbsp;adverb</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>count</strong> = 10<br>
+<strong>count_limit</strong> = 10<br>
+<strong>dict_Fi_ni</strong> = {u'andiron.n.01': [u'888', u'345'], u'cad.n.01': [u'893', u'348'], u'dog.n.01': [u'888', u'345'], u'dog.n.03': [u'888', u'345'], u'food.n.01': [u'1372', u'658'], u'food.n.02': [u'1354', u'646'], u'food.n.03': [u'1354', u'646'], u'frank.n.02': [u'890', u'347'], u'frump.n.01': [u'888', u'345'], u'pawl.n.01': [u'892', u'349']}<br>
+<strong>docLine</strong> = &lt;open file 'docline_semantic.txt', mode 'rU'&gt;<br>
+<strong>docVectorList</strong> = [[u'4743', 0.43212432000383832], [u'1591', 0.43030605324443244], [u'2164', 0.39664835134442317], [u'4753', 0.39529894191690818], [u'10', 0.3660767680836931], [u'4711', 0.36341646464477501], [u'4810', 0.36269437214621802], [u'4770', 0.35663602213848933], [u'4828', 0.35448541997207123], [u'818', 0.35294153895273889], [u'2173', 0.35051451554578189], [u'4805', 0.34828327658752711], [u'825', 0.34123296184155549], [u'4705', 0.33678571463821594], [u'4837', 0.33622009436888772], [u'4713', 0.32226806552156773], [u'4826', 0.32171345467027174], [u'97', 0.31475825509615651], [u'4860', 0.31439023724485382], [u'92', 0.31417124126670903], ...]<br>
+<strong>doc_frequencies</strong> = []<br>
+<strong>doc_lines</strong> = [42679, 14311, 19468, 42769, 82, 42391, 43282, 42922, 43444, 7354, 19549, 43237, 7417, 42337, 43525, 42409, 43426, 865, 43732, 820, ...]<br>
+<strong>docs</strong> = []<br>
+<strong>e</strong> = 2.718281828459045<br>
+<strong>i</strong> = [u'1499', 0.0084194462721837327]<br>
+<strong>indexfile</strong> = &lt;closed file 'invindex_semantic.txt', mode 'rU'&gt;<br>
+<strong>line</strong> = '1499 13483 <font color="#c040c0">\n</font>'<br>
+<strong>linenum</strong> = 33<br>
+<strong>num_rel_docs</strong> = 10<br>
+<strong>pi</strong> = 3.141592653589793<br>
+<strong>pos</strong> = [u'1499', u'13483']<br>
+<strong>qVector</strong> = array([ 0.22523695,  0.22523695,  0.20385594,  0...22505113,  0.22494031,  0.22486594,  0.22523695])<br>
+<strong>qt</strong> = (u'food', 'NN')<br>
+<strong>query</strong> = 'dog food'<br>
+<strong>query_dict</strong> = Counter({u'dog.n.01': 1, u'dog.n.03': 1, u'food....l.n.01': 1, u'andiron.n.01': 1, u'food.n.02': 1})<br>
+<strong>query_terms</strong> = set([u'andiron.n.01', u'cad.n.01', u'dog.n.01', u'dog.n.03', u'food.n.01', u'food.n.02', ...])<br>
+<strong>query_tokens</strong> = [(u'dog', 'NN'), (u'food', 'NN')]<br>
+<strong>start</strong> = 1475003310.2028<br>
+<strong>stop</strong> = 1475003325.910969<br>
+<strong>syn</strong> = u'food.n.03'<br>
+<strong>synonyms</strong> = [Synset('food.n.01'), Synset('food.n.02'), Synset('food.n.03')]<br>
+<strong>term</strong> = u'cad.n.01'<br>
+<strong>termsfile</strong> = &lt;closed file 'terms_semantic.txt', mode 'rU'&gt;<br>
+<strong>union_docs</strong> = set([u'1', u'10', u'1002', u'1003', u'1004', u'1005', ...])<br>
+<strong>univ_dict</strong> = {u'andiron.n.01': [[u'1', u'1', u'1.70710678119'], [u'10', u'3', u'2.58113883008'], [u'84', u'4', u'2.87082869339'], [u'85', u'2', u'2.22474487139'], [u'86', u'2', u'2.22474487139'], [u'87', u'4', u'2.87082869339'], [u'89', u'4', u'2.87082869339'], [u'90', u'1', u'1.70710678119'], [u'91', u'1', u'1.70710678119'], [u'92', u'2', u'2.22474487139'], [u'93', u'1', u'1.70710678119'], [u'94', u'5', u'3.12132034356'], [u'96', u'5', u'3.12132034356'], [u'97', u'11', u'4.2403703492'], [u'98', u'4', u'2.87082869339'], [u'99', u'2', u'2.22474487139'], [u'149', u'1', u'1.70710678119'], [u'203', u'1', u'1.70710678119'], [u'212', u'2', u'2.22474487139'], [u'214', u'4', u'2.87082869339'], ...], u'cad.n.01': [[u'1', u'1', u'1.70710678119'], [u'10', u'3', u'2.58113883008'], [u'84', u'4', u'2.87082869339'], [u'85', u'2', u'2.22474487139'], [u'86', u'2', u'2.22474487139'], [u'87', u'4', u'2.87082869339'], [u'89', u'4', u'2.87082869339'], [u'90', u'1', u'1.70710678119'], [u'91', u'1', u'1.70710678119'], [u'92', u'2', u'2.22474487139'], [u'93', u'1', u'1.70710678119'], [u'94', u'5', u'3.12132034356'], [u'96', u'5', u'3.12132034356'], [u'97', u'11', u'4.2403703492'], [u'98', u'4', u'2.87082869339'], [u'99', u'2', u'2.22474487139'], [u'149', u'1', u'1.70710678119'], [u'161', u'1', u'1.70710678119'], [u'203', u'1', u'1.70710678119'], [u'212', u'2', u'2.22474487139'], ...], u'dog.n.01': [[u'1', u'1', u'1.70710678119'], [u'10', u'3', u'2.58113883008'], [u'84', u'4', u'2.87082869339'], [u'85', u'2', u'2.22474487139'], [u'86', u'2', u'2.22474487139'], [u'87', u'4', u'2.87082869339'], [u'89', u'4', u'2.87082869339'], [u'90', u'1', u'1.70710678119'], [u'91', u'1', u'1.70710678119'], [u'92', u'2', u'2.22474487139'], [u'93', u'1', u'1.70710678119'], [u'94', u'5', u'3.12132034356'], [u'96', u'5', u'3.12132034356'], [u'97', u'11', u'4.2403703492'], [u'98', u'4', u'2.87082869339'], [u'99', u'2', u'2.22474487139'], [u'149', u'1', u'1.70710678119'], [u'203', u'1', u'1.70710678119'], [u'212', u'2', u'2.22474487139'], [u'214', u'4', u'2.87082869339'], ...], u'dog.n.03': [[u'1', u'1', u'1.70710678119'], [u'10', u'3', u'2.58113883008'], [u'84', u'4', u'2.87082869339'], [u'85', u'2', u'2.22474487139'], [u'86', u'2', u'2.22474487139'], [u'87', u'4', u'2.87082869339'], [u'89', u'4', u'2.87082869339'], [u'90', u'1', u'1.70710678119'], [u'91', u'1', u'1.70710678119'], [u'92', u'2', u'2.22474487139'], [u'93', u'1', u'1.70710678119'], [u'94', u'5', u'3.12132034356'], [u'96', u'5', u'3.12132034356'], [u'97', u'11', u'4.2403703492'], [u'98', u'4', u'2.87082869339'], [u'99', u'2', u'2.22474487139'], [u'149', u'1', u'1.70710678119'], [u'203', u'1', u'1.70710678119'], [u'212', u'2', u'2.22474487139'], [u'214', u'4', u'2.87082869339'], ...], u'food.n.01': [[u'1', u'2', u'2.22474487139'], [u'10', u'2', u'2.22474487139'], [u'12', u'6', u'3.34520787991'], [u'13', u'5', u'3.12132034356'], [u'36', u'1', u'1.70710678119'], [u'37', u'1', u'1.70710678119'], [u'54', u'1', u'1.70710678119'], [u'78', u'1', u'1.70710678119'], [u'83', u'3', u'2.58113883008'], [u'84', u'2', u'2.22474487139'], [u'85', u'2', u'2.22474487139'], [u'86', u'3', u'2.58113883008'], [u'87', u'3', u'2.58113883008'], [u'88', u'1', u'1.70710678119'], [u'89', u'5', u'3.12132034356'], [u'90', u'3', u'2.58113883008'], [u'91', u'3', u'2.58113883008'], [u'92', u'2', u'2.22474487139'], [u'93', u'2', u'2.22474487139'], [u'94', u'7', u'3.5495097568'], ...], u'food.n.02': [[u'1', u'2', u'2.22474487139'], [u'10', u'2', u'2.22474487139'], [u'12', u'6', u'3.34520787991'], [u'13', u'5', u'3.12132034356'], [u'36', u'1', u'1.70710678119'], [u'37', u'1', u'1.70710678119'], [u'54', u'1', u'1.70710678119'], [u'78', u'1', u'1.70710678119'], [u'83', u'3', u'2.58113883008'], [u'84', u'2', u'2.22474487139'], [u'85', u'2', u'2.22474487139'], [u'86', u'3', u'2.58113883008'], [u'87', u'3', u'2.58113883008'], [u'88', u'1', u'1.70710678119'], [u'89', u'5', u'3.12132034356'], [u'90', u'3', u'2.58113883008'], [u'91', u'3', u'2.58113883008'], [u'92', u'2', u'2.22474487139'], [u'93', u'2', u'2.22474487139'], [u'94', u'7', u'3.5495097568'], ...], u'food.n.03': [[u'1', u'2', u'2.22474487139'], [u'10', u'2', u'2.22474487139'], [u'12', u'6', u'3.34520787991'], [u'13', u'5', u'3.12132034356'], [u'36', u'1', u'1.70710678119'], [u'37', u'1', u'1.70710678119'], [u'54', u'1', u'1.70710678119'], [u'78', u'1', u'1.70710678119'], [u'83', u'3', u'2.58113883008'], [u'84', u'2', u'2.22474487139'], [u'85', u'2', u'2.22474487139'], [u'86', u'3', u'2.58113883008'], [u'87', u'3', u'2.58113883008'], [u'88', u'1', u'1.70710678119'], [u'89', u'5', u'3.12132034356'], [u'90', u'3', u'2.58113883008'], [u'91', u'3', u'2.58113883008'], [u'92', u'2', u'2.22474487139'], [u'93', u'2', u'2.22474487139'], [u'94', u'7', u'3.5495097568'], ...], u'frank.n.02': [[u'1', u'1', u'1.70710678119'], [u'10', u'3', u'2.58113883008'], [u'84', u'4', u'2.87082869339'], [u'85', u'2', u'2.22474487139'], [u'86', u'2', u'2.22474487139'], [u'87', u'4', u'2.87082869339'], [u'89', u'4', u'2.87082869339'], [u'90', u'1', u'1.70710678119'], [u'91', u'1', u'1.70710678119'], [u'92', u'2', u'2.22474487139'], [u'93', u'1', u'1.70710678119'], [u'94', u'5', u'3.12132034356'], [u'96', u'5', u'3.12132034356'], [u'97', u'11', u'4.2403703492'], [u'98', u'4', u'2.87082869339'], [u'99', u'2', u'2.22474487139'], [u'149', u'1', u'1.70710678119'], [u'203', u'1', u'1.70710678119'], [u'212', u'2', u'2.22474487139'], [u'214', u'4', u'2.87082869339'], ...], u'frump.n.01': [[u'1', u'1', u'1.70710678119'], [u'10', u'3', u'2.58113883008'], [u'84', u'4', u'2.87082869339'], [u'85', u'2', u'2.22474487139'], [u'86', u'2', u'2.22474487139'], [u'87', u'4', u'2.87082869339'], [u'89', u'4', u'2.87082869339'], [u'90', u'1', u'1.70710678119'], [u'91', u'1', u'1.70710678119'], [u'92', u'2', u'2.22474487139'], [u'93', u'1', u'1.70710678119'], [u'94', u'5', u'3.12132034356'], [u'96', u'5', u'3.12132034356'], [u'97', u'11', u'4.2403703492'], [u'98', u'4', u'2.87082869339'], [u'99', u'2', u'2.22474487139'], [u'149', u'1', u'1.70710678119'], [u'203', u'1', u'1.70710678119'], [u'212', u'2', u'2.22474487139'], [u'214', u'4', u'2.87082869339'], ...], u'pawl.n.01': [[u'1', u'1', u'1.70710678119'], [u'10', u'3', u'2.58113883008'], [u'84', u'4', u'2.87082869339'], [u'85', u'2', u'2.22474487139'], [u'86', u'2', u'2.22474487139'], [u'87', u'4', u'2.87082869339'], [u'89', u'4', u'2.87082869339'], [u'90', u'1', u'1.70710678119'], [u'91', u'1', u'1.70710678119'], [u'92', u'2', u'2.22474487139'], [u'93', u'1', u'1.70710678119'], [u'94', u'5', u'3.12132034356'], [u'96', u'5', u'3.12132034356'], [u'97', u'11', u'4.2403703492'], [u'98', u'4', u'2.87082869339'], [u'99', u'2', u'2.22474487139'], [u'149', u'1', u'1.70710678119'], [u'203', u'1', u'1.70710678119'], [u'212', u'2', u'2.22474487139'], [u'214', u'4', u'2.87082869339'], ...]}<br>
+<strong>wn</strong> = &lt;WordNetCorpusReader in u'/home/anikethjr/nltk_data/corpora/wordnet'&gt;</td></tr></table>
+</body></html>
