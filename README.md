@@ -1,5 +1,5 @@
 # VMARK
-Text Based Information Retrieval System using the Vector Space Model, developed in partial fulfilment for the Information Retrieval Course. 
+Text Based Information Retrieval System using the Vector Space Model, developed in partial fulfilment for the Information Retrieval Course offered in my University. 
 
 
 ### Instructions:
